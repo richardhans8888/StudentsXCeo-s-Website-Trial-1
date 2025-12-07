@@ -41,6 +41,10 @@ body {
   will-change: transform, opacity;
   animation: blobFloat 28s ease-in-out infinite;
 }
+.hero-blur-bg[data-stopped="true"] .blob {
+  animation: none !important;
+  opacity: 0.25;
+}
 .hero-blur-bg .b1 {
   background: radial-gradient(circle at 30% 30%, #60a5fa, #1e3a8a 70%);
   left: -10vmax;
@@ -114,3 +118,13 @@ body {
 }
 
 /* Programs section gradient to match site theme */
+
+/* Partners logos marquee (moves to the right) */
+.logo-marquee {
+  animation: marqueeRight 40s linear infinite;
+  will-change: transform;
+}
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}

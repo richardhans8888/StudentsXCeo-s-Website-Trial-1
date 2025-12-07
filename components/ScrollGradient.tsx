@@ -7,6 +7,7 @@ export default function ScrollGradient() {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    let stopped = false;
     const update = () => {
       const max = Math.max(1, document.body.scrollHeight - window.innerHeight);
       const p = Math.min(1, Math.max(0, window.scrollY / max));
@@ -18,7 +19,15 @@ export default function ScrollGradient() {
       el.style.setProperty("--mid", `${mid}%`);
     };
     update();
-    const onScroll = () => update();
+    const stopAll = () => {
+      if (stopped) return;
+      stopped = true;
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+      const heroes = Array.from(document.querySelectorAll<HTMLElement>(".hero-blur-bg"));
+      heroes.forEach((h) => h.setAttribute("data-stopped", "true"));
+    };
+    const onScroll = () => stopAll();
     const onResize = () => update();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize);

@@ -7,6 +7,11 @@ export default function Home() {
       <ScrollGradient />
       <ScrollReveal />
       <section className="relative z-20 mx-auto max-w-6xl px-4 sm:px-6 min-h-[50vh] flex items-center">
+        <div className="absolute inset-0 z-0 hero-blur-bg">
+          <div className="blob b1" />
+          <div className="blob b2" />
+          <div className="blob b3" />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center js-reveal">
           <div className="md:col-span-7">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
@@ -20,8 +25,8 @@ export default function Home() {
           </div>
           <div className="md:col-span-5">
             <div className="h-1 w-12 bg-blue-600 mb-5" />
-            <h3 className="text-xl sm:text-2xl font-semibold">Creating leaders who move industries</h3>
-            <p className="mt-3 text-sm sm:text-base text-zinc-300 max-w-md">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Creating leaders who move industries</h3>
+            <p className="mt-3 text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl">
               StudentsxCEOs Jakarta equips future changemakers with the skills, mindset, and opportunities to create meaningful impact.
             </p>
             <a href="#learn-more" className="mt-6 inline-flex items-center gap-2 text-white font-medium">
@@ -50,10 +55,22 @@ export default function Home() {
               alt="About StudentsxCEOs"
               className="absolute inset-0 w-full h-full object-cover grayscale"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/25 pointer-events-none" />
+            <div className="absolute -top-10 -right-8 w-48 h-48 rounded-full bg-blue-500/20 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-12 -left-10 w-56 h-56 rounded-full bg-cyan-400/15 blur-3xl pointer-events-none" />
+            <div className="absolute top-6 left-6 h-12 w-[2px] bg-blue-500/60 z-10 pointer-events-none" />
+            <div className="absolute top-6 left-6 h-[2px] w-12 bg-blue-500/60 z-10 pointer-events-none" />
+            <div className="absolute bottom-6 right-6 h-12 w-[2px] bg-blue-500/60 z-10 pointer-events-none" />
+            <div className="absolute bottom-6 right-6 h-[2px] w-12 bg-blue-500/60 z-10 pointer-events-none" />
           </div>
         </div>
       </section>
       <section className="relative z-20 mx-auto max-w-screen-2xl px-6 sm:px-8 py-14 sm:py-20">
+        <div className="absolute inset-0 z-0 hero-blur-bg">
+          <div className="blob b1" />
+          <div className="blob b2" />
+          <div className="blob b3" />
+        </div>
         <div className="text-center js-reveal">
           <div className="flex justify-center">
             <div className="h-1 w-16 bg-blue-600 mb-4" />
@@ -125,34 +142,49 @@ export default function Home() {
       <section className="relative z-20 w-full bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-screen-2xl px-6 sm:px-8">
           <div className="text-center js-reveal">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Company Partners&#39;</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Company Partners</h2>
           </div>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10 js-reveal">
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">McKinsey &amp; Company</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Bain &amp; Company</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">BCG</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">KKR</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Kellogg</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Harvard</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Microsoft</span>
+          <div className="mt-8 relative overflow-hidden js-reveal">
+            <div className="logo-marquee flex items-center gap-x-10">
+              <img src="/Company_1.png" alt="Company 1" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_2.png" alt="Company 2" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_3.png" alt="Company 3" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_4.png" alt="Company 4" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_5.jpg" alt="Company 5" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_6.png" alt="Company 6" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_7.png" alt="Company 7" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_8.png" alt="Company 8" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_1.png" alt="Company 1 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_2.png" alt="Company 2 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_3.png" alt="Company 3 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_4.png" alt="Company 4 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_5.jpg" alt="Company 5 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_6.png" alt="Company 6 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_7.png" alt="Company 7 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/Company_8.png" alt="Company 8 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+            </div>
           </div>
-          <div className="mt-6 flex justify-center js-reveal">
+          <div className="mt-10 flex justify-center js-reveal">
             <span className="inline-flex px-3 py-1 text-xs font-semibold rounded-full bg-zinc-100 text-zinc-700">and many more</span>
           </div>
           <div className="mt-12 text-center js-reveal">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Members and Alumni&#39;s Background</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Media &amp; Community Partners</h2>
           </div>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10 js-reveal">
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Google</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">BCG</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Kearney</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">GoTo</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Grab</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">ASTRO</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Deloitte</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Oliver Wyman</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Young Leaders Indonesia</span>
-            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Bukalapak</span>
+          <div className="mt-8 relative overflow-hidden js-reveal">
+            <div className="logo-marquee flex items-center gap-x-10">
+              <img src="/MC_1.webp" alt="Media & Community 1" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_2.png" alt="Media & Community 2" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_3.png" alt="Media & Community 3" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_4.jpeg" alt="Media & Community 4" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_5.png" alt="Media & Community 5" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_6.jpg" alt="Media & Community 6" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_1.webp" alt="Media & Community 1 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_2.png" alt="Media & Community 2 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_3.png" alt="Media & Community 3 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_4.jpeg" alt="Media & Community 4 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_5.png" alt="Media & Community 5 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+              <img src="/MC_6.jpg" alt="Media & Community 6 duplicate" className="h-10 sm:h-12 w-28 object-contain" />
+            </div>
           </div>
           <div className="mt-6 flex justify-center js-reveal">
             <span className="inline-flex px-3 py-1 text-xs font-semibold rounded-full bg-zinc-100 text-zinc-700">and many more</span>
