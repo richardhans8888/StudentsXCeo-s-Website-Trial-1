@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -27,6 +28,41 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="w-full border-b border-black/10 bg-white dark:bg-white">
+          <nav className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="flex h-16 sm:h-20 items-center justify-between">
+              <div className="flex items-center">
+                <Link href="/" className="group">
+                  <div className="leading-tight">
+                    <div className="text-base sm:text-lg font-bold tracking-[0.28em] uppercase text-black">StudentsXCeos</div>
+                    <div className="text-xs sm:text-sm font-semibold tracking-wider text-blue-600">Jakarta</div>
+                  </div>
+                </Link>
+                <div className="hidden md:flex items-center ml-14 sm:ml-20 gap-6 sm:gap-7 text-base sm:text-lg text-zinc-800">
+                  <a href="#industry" className="hover:text-blue-600">Your industry</a>
+                  <a href="#needs" className="hover:text-blue-600">Your needs</a>
+                  <a href="#about" className="hover:text-blue-600">About us</a>
+                  <a href="#careers" className="hover:text-blue-600">Careers</a>
+                  <a href="#insights" className="hover:text-blue-600">Insights</a>
+                  <a href="#contact" className="hover:text-blue-600">Contact</a>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <button aria-label="Search" className="text-zinc-700 hover:text-blue-600">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
+                    <path d="M20 20L16.65 16.65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                </button>
+                <button className="md:hidden p-2 ml-2 text-zinc-700" aria-label="Open menu">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
