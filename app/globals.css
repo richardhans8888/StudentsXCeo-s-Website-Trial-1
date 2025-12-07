@@ -73,6 +73,17 @@ body {
   transition: background 200ms linear;
 }
 
+.js-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 500ms ease, transform 500ms ease;
+  will-change: opacity, transform;
+}
+.js-reveal[data-revealed="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes gradientShift {
   0% {
     background: radial-gradient(120% 120% at 20% 20%, #0ea5e9 0%, #1d4ed8 45%, #0b1020 90%);

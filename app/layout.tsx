@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="w-full border-b border-black/10 bg-white dark:bg-white">
+        <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
           <nav className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="flex h-16 sm:h-20 items-center justify-between">
               <div className="flex items-center">
@@ -69,6 +70,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
