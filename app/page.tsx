@@ -44,7 +44,13 @@ export default function Home() {
               <a href="#find-out" className="mt-8 inline-flex h-12 sm:h-14 items-center justify-center rounded-md bg-white text-black px-6 text-lg font-semibold hover:bg-white/90 transition-colors">Find out more</a>
             </div>
           </div>
-          <div className="bg-white min-h-[520px] sm:min-h-[680px] js-reveal" />
+          <div className="bg-white min-h-[520px] sm:min-h-[680px] js-reveal relative overflow-hidden">
+            <img
+              src="/About_us.jpg"
+              alt="About StudentsxCEOs"
+              className="absolute inset-0 w-full h-full object-cover grayscale"
+            />
+          </div>
         </div>
       </section>
       <section className="relative z-20 mx-auto max-w-screen-2xl px-6 sm:px-8 py-14 sm:py-20">
@@ -62,46 +68,56 @@ export default function Home() {
           <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 rounded-md bg-blue-600 px-3 py-1 text-white text-sm font-semibold">School of Ideas</div>
             <div className="absolute inset-0 p-5 flex flex-col justify-end">
-              <h4 className="text-lg font-semibold">Gandeng Scholarship</h4>
-              <p className="mt-2 text-sm text-white/80">Financial assistance and mentorship to exceptional mentees.</p>
-              <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
+              <h4 className="text-lg font-semibold">Offline event for high school students</h4>
+              <p className="mt-2 text-sm text-white/80">Explore potential through personality tests and grow into future leaders with engaging talk shows and workshops.</p>
+              <div className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold">April</div>
+              <p className="mt-3 text-xs text-white/70">High School Students</p>
           </div>
           </div>
           <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 rounded-md bg-blue-600 px-3 py-1 text-white text-sm font-semibold">SxCareer</div>
             <div className="absolute inset-0 p-5 flex flex-col justify-end">
-              <h4 className="text-lg font-semibold">Consulting</h4>
-              <p className="mt-2 text-sm text-white/80">Hands-on learning with courses and real client projects.</p>
-              <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
+              <h4 className="text-lg font-semibold">Career preparation webinar</h4>
+              <p className="mt-2 text-sm text-white/80">Focused on Consulting, Banking, FMCG, Media, Technology, and Startup plus impactful goal-setting sessions to empower future leaders.</p>
+              <div className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold">April</div>
+              <p className="mt-3 text-xs text-white/70">Active Students &amp; Fresh Graduates</p>
           </div>
           </div>
           <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 rounded-md bg-blue-600 px-3 py-1 text-white text-sm font-semibold">SxCelerate</div>
             <div className="absolute inset-0 p-5 flex flex-col justify-end">
-              <h4 className="text-lg font-semibold">Connect & Empower</h4>
-              <p className="mt-2 text-sm text-white/80">Networking events connecting young professionals and leaders.</p>
-              <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
+              <h4 className="text-lg font-semibold">Bootcamp program</h4>
+              <p className="mt-2 text-sm text-white/80">Two-month program including Forum, Mentoring, Company Visit, Case Competition, and Client Project.</p>
+              <div className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold">May</div>
+              <p className="mt-3 text-xs text-white/70">Active Students</p>
           </div>
           </div>
           <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 rounded-md bg-blue-600 px-3 py-1 text-white text-sm font-semibold">Meet the Series</div>
             <div className="absolute inset-0 p-5 flex flex-col justify-end">
-              <h4 className="text-lg font-semibold">Business Case Competition</h4>
-              <p className="mt-2 text-sm text-white/80">Tackle complex problems and sharpen strategic thinking.</p>
-              <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
+              <h4 className="text-lg font-semibold">Big offline event series</h4>
+              <p className="mt-2 text-sm text-white/80">Meet The CEO, Meet The Expert, and Meet Yourself — career insights, skills training, and leader perspectives.</p>
+              <div className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold">July</div>
+              <p className="mt-3 text-xs text-white/70">All Future Leaders</p>
           </div>
           </div>
           <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 rounded-md bg-blue-600 px-3 py-1 text-white text-sm font-semibold">SxConference</div>
             <div className="absolute inset-0 p-5 flex flex-col justify-end">
-              <h4 className="text-lg font-semibold">Leadership Workshops</h4>
-              <p className="mt-2 text-sm text-white/80">Hands-on sessions to build practical leadership skills.</p>
-              <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
+              <h4 className="text-lg font-semibold">Dynamic leadership program</h4>
+              <p className="mt-2 text-sm text-white/80">Unites alumni, young professionals, and industry leaders for insightful talk shows and engaging discussions.</p>
+              <div className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold">August</div>
+              <p className="mt-3 text-xs text-white/70">Alumni, External, Internal SxC Jakarta</p>
             </div>
           </div>
         </div>
@@ -109,7 +125,7 @@ export default function Home() {
       <section className="relative z-20 w-full bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-screen-2xl px-6 sm:px-8">
           <div className="text-center js-reveal">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Trainers and Coaches&#39; Background</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Company Partners&#39;</h2>
           </div>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10 js-reveal">
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">McKinsey &amp; Company</span>
@@ -133,7 +149,7 @@ export default function Home() {
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">GoTo</span>
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Grab</span>
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">ASTRO</span>
-            <span className="h-8 sm:h-10 inline-flex items_center text-zinc-800 font-semibold">Deloitte</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Deloitte</span>
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Oliver Wyman</span>
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Young Leaders Indonesia</span>
             <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Bukalapak</span>
