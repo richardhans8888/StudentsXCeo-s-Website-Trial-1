@@ -14,7 +14,7 @@ export default function Home() {
             </h2>
             <div className="mt-3 sm:mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
               <span className="text-3xl sm:text-5xl md:text-6xl font-extrabold">REIMAGINE</span>
-              <span className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-blue-600">x</span>
+              <span className="text-3xl sm:text-5xl md:text-6xl font-extrabold live-x">x</span>
               <span className="text-3xl sm:text-5xl md:text-6xl font-extrabold">LEADERSHIP</span>
             </div>
           </div>
@@ -34,12 +34,12 @@ export default function Home() {
       <section className="relative z-20 w-full px-0 py-0">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-blue-50 text-zinc-900 px-6 sm:px-12 min-h-[520px] sm:min-h-[680px] flex items-center js-reveal">
-            <div className="max-w-xl">
+            <div className="max-w-2xl md:max-w-3xl">
               <div className="h-1 w-14 bg-blue-500 mb-3 sm:mb-4" />
-              <p className="text-sm sm:text-base font-semibold tracking-wider text-zinc-700 mb-4 sm:mb-6">Explore how we help future leaders</p>
-              <h3 className="mt-0 text-5xl sm:text-6xl font-bold text-zinc-900">Fit for Growth</h3>
-              <p className="mt-4 text-base sm:text-lg text-zinc-700 max-w-md">
-                Our programs help transform how students lead and operate while building the capacity to invest in growth.
+              <p className="text-sm sm:text-base font-semibold tracking-wider text-zinc-700 mb-4 sm:mb-6">Discover who we are</p>
+              <h3 className="mt-0 text-5xl sm:text-6xl font-bold text-zinc-900">About StudentsxCEOs Jakarta</h3>
+              <p className="mt-4 text-base sm:text-lg text-zinc-700 max-w-2xl">
+                We are a leadership community that empowers top university students to learn directly from CEOs, founders, and industry professionals, creating a platform for growth, collaboration, and meaningful impact.
               </p>
               <a href="#find-out" className="mt-8 inline-flex h-12 sm:h-14 items-center justify-center rounded-md bg-white text-black px-6 text-lg font-semibold hover:bg-white/90 transition-colors">Find out more</a>
             </div>
@@ -47,7 +47,7 @@ export default function Home() {
           <div className="bg-white min-h-[520px] sm:min-h-[680px] js-reveal" />
         </div>
       </section>
-      <section className="relative z-20 mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-20">
+      <section className="relative z-20 mx-auto max-w-screen-2xl px-6 sm:px-8 py-14 sm:py-20">
         <div className="text-center js-reveal">
           <div className="flex justify-center">
             <div className="h-1 w-16 bg-blue-600 mb-4" />
@@ -58,7 +58,7 @@ export default function Home() {
             from short events to dedicated training and scholarship opportunities.
           </p>
         </div>
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6">
           <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
@@ -77,7 +77,7 @@ export default function Home() {
               <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
           </div>
           </div>
-          <div className="group relative h-[520px] sm:h-[640px] overflow_hidden rounded-xl bg-neutral-900 js-reveal">
+          <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
             <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
             <div className="absolute inset-0 p-5 flex flex-col justify-end">
@@ -94,6 +94,52 @@ export default function Home() {
               <p className="mt-2 text-sm text-white/80">Tackle complex problems and sharpen strategic thinking.</p>
               <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
           </div>
+          </div>
+          <div className="group relative h-[520px] sm:h-[640px] overflow-hidden rounded-xl bg-neutral-900 js-reveal">
+            <div className="absolute inset-0 bg-[url('/api/pics/logo.webp')] bg-cover bg-center opacity-35" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+            <div className="absolute inset-0 p-5 flex flex-col justify-end">
+              <h4 className="text-lg font-semibold">Leadership Workshops</h4>
+              <p className="mt-2 text-sm text-white/80">Hands-on sessions to build practical leadership skills.</p>
+              <a href="#" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 text-white px-5 text-sm font-semibold hover:bg-blue-500">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="relative z-20 w-full bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-screen-2xl px-6 sm:px-8">
+          <div className="text-center js-reveal">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Trainers and Coaches&#39; Background</h2>
+          </div>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10 js-reveal">
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">McKinsey &amp; Company</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Bain &amp; Company</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">BCG</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">KKR</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Kellogg</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Harvard</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Microsoft</span>
+          </div>
+          <div className="mt-6 flex justify-center js-reveal">
+            <span className="inline-flex px-3 py-1 text-xs font-semibold rounded-full bg-zinc-100 text-zinc-700">and many more</span>
+          </div>
+          <div className="mt-12 text-center js-reveal">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">Members and Alumni&#39;s Background</h2>
+          </div>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-10 js-reveal">
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Google</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">BCG</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Kearney</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">GoTo</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Grab</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">ASTRO</span>
+            <span className="h-8 sm:h-10 inline-flex items_center text-zinc-800 font-semibold">Deloitte</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Oliver Wyman</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Young Leaders Indonesia</span>
+            <span className="h-8 sm:h-10 inline-flex items-center text-zinc-800 font-semibold">Bukalapak</span>
+          </div>
+          <div className="mt-6 flex justify-center js-reveal">
+            <span className="inline-flex px-3 py-1 text-xs font-semibold rounded-full bg-zinc-100 text-zinc-700">and many more</span>
           </div>
         </div>
       </section>

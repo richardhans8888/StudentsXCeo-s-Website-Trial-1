@@ -10,7 +10,8 @@ export default function ScrollReveal() {
         for (const e of entries) {
           if (e.isIntersecting) {
             e.target.setAttribute("data-revealed", "true");
-            obs.unobserve(e.target);
+          } else {
+            e.target.removeAttribute("data-revealed");
           }
         }
       },
