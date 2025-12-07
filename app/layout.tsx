@@ -34,21 +34,26 @@ export default function RootLayout({
               <div className="flex items-center">
                 <Link href="/" className="group">
                   <div className="leading-tight">
-                    <div className="text-base sm:text-lg font-bold tracking-[0.28em] uppercase text-black">StudentsXCeos</div>
+                    <div className="text-base sm:text-lg font-bold tracking-[0.28em] text-black">
+                      <span className="tracking-[0.28em]">STUDENTS</span>
+                      <span className="mx-1 text-[0.75em] font-semibold tracking-normal align-baseline">x</span>
+                      <span className="tracking-[0.28em]">CEO</span>
+                      <span className="text-[0.75em] font-semibold tracking-normal align-baseline">S</span>
+                    </div>
                     <div className="text-xs sm:text-sm font-semibold tracking-wider text-blue-600">Jakarta</div>
                   </div>
                 </Link>
                 <div className="hidden md:flex items-center ml-14 sm:ml-20 gap-6 sm:gap-7 text-base sm:text-lg text-zinc-800">
-                  <a href="#industry" className="hover:text-blue-600">Your industry</a>
-                  <a href="#needs" className="hover:text-blue-600">Your needs</a>
-                  <a href="#about" className="hover:text-blue-600">About us</a>
-                  <a href="#careers" className="hover:text-blue-600">Careers</a>
-                  <a href="#insights" className="hover:text-blue-600">Insights</a>
-                  <a href="#contact" className="hover:text-blue-600">Contact</a>
+                  <a href="#industry" className="transition-colors duration-300 ease-out hover:text-blue-500/80">Your industry</a>
+                  <a href="#needs" className="transition-colors duration-300 ease-out hover:text-blue-500/80">Your needs</a>
+                  <a href="#about" className="transition-colors duration-300 ease-out hover:text-blue-500/80">About us</a>
+                  <a href="#careers" className="transition-colors duration-300 ease-out hover:text-blue-500/80">Careers</a>
+                  <a href="#insights" className="transition-colors duration-300 ease-out hover:text-blue-500/80">Insights</a>
+                  <a href="#contact" className="transition-colors duration-300 ease-out hover:text-blue-500/80">Contact</a>
                 </div>
               </div>
               <div className="flex items-center">
-                <button aria-label="Search" className="text-zinc-700 hover:text-blue-600">
+                <button aria-label="Search" className="text-zinc-700 transition-colors duration-300 ease-out hover:text-blue-500/80">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
                     <path d="M20 20L16.65 16.65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />

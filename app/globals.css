@@ -24,3 +24,44 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hero background: animated blue blobs with soft blur */
+.hero-blur-bg {
+  position: absolute;
+  inset: 0;
+  filter: blur(60px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+.hero-blur-bg .blob {
+  position: absolute;
+  width: 42vmax;
+  height: 42vmax;
+  border-radius: 50%;
+  will-change: transform, opacity;
+  animation: blobFloat 28s ease-in-out infinite;
+}
+.hero-blur-bg .b1 {
+  background: radial-gradient(circle at 30% 30%, #60a5fa, #1e3a8a 70%);
+  left: -10vmax;
+  top: -8vmax;
+}
+.hero-blur-bg .b2 {
+  background: radial-gradient(circle at 70% 40%, #22d3ee, #1e40af 70%);
+  right: -12vmax;
+  top: 10vmax;
+  animation-delay: 6s;
+}
+.hero-blur-bg .b3 {
+  background: radial-gradient(circle at 40% 70%, #93c5fd, #1e3a8a 70%);
+  left: 10vmax;
+  bottom: -12vmax;
+  animation-delay: 12s;
+}
+@keyframes blobFloat {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  25% { transform: translate3d(2vmax, -1vmax, 0) scale(1.05); }
+  50% { transform: translate3d(-1vmax, 2vmax, 0) scale(0.98); }
+  75% { transform: translate3d(3vmax, 1vmax, 0) scale(1.06); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
