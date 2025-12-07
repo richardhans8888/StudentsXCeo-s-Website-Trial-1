@@ -65,3 +65,22 @@ body {
   75% { transform: translate3d(3vmax, 1vmax, 0) scale(1.06); }
   100% { transform: translate3d(0, 0, 0) scale(1); }
 }
+
+/* Scroll section gradient animation */
+.scroll-gradient {
+  background: radial-gradient(120% 120% at var(--gx, 20%) var(--gy, 20%), #0ea5e9 0%, #1d4ed8 var(--mid, 45%), #0b1020 90%);
+  animation: none;
+  transition: background 200ms linear;
+}
+
+@keyframes gradientShift {
+  0% {
+    background: radial-gradient(120% 120% at 20% 20%, #0ea5e9 0%, #1d4ed8 45%, #0b1020 90%);
+  }
+  50% {
+    background: radial-gradient(120% 120% at 80% 60%, #22d3ee 0%, #1e40af 50%, #0b1020 95%);
+  }
+  100% {
+    background: radial-gradient(120% 120% at 20% 20%, #0ea5e9 0%, #1d4ed8 45%, #0b1020 90%);
+  }
+}
