@@ -29,7 +29,7 @@ export default function Home() {
             <p className="mt-3 text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl">
               StudentsxCEOs Jakarta equips future changemakers with the skills, mindset, and opportunities to create meaningful impact.
             </p>
-            <a href="#learn-more" className="mt-6 inline-flex items-center gap-2 text-white font-medium">
+            <a href="/about" className="mt-6 inline-flex items-center gap-2 text-white font-medium">
               See what we do
               <span className="inline-flex h-5 w-5 items-center justify-center rounded-sm bg-blue-600 text-[12px] leading-none">&gt;</span>
             </a>
