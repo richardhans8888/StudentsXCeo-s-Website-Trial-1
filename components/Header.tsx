@@ -15,21 +15,15 @@ const navItems: NavItem[] = [
     href: "/about",
     dropdown: [
       { label: "Know About Us", href: "/about" },
-      { label: "Core Team", href: "#core-team" },
+      { label: "Our People", href: "/our-people" },
       { label: "Alumni Network", href: "#alumni-network" },
     ],
   },
   {
     label: "Programs",
-    dropdown: [
-      { label: "Flagship Programs", href: "#flagship-programs" },
-      { label: "Workshops & Bootcamps", href: "#workshops-bootcamps" },
-      { label: "Mentorship Sessions", href: "#mentorship-sessions" },
-      { label: "CEO Talks / Speaker Series", href: "#ceo-talks" },
-      { label: "Case Competitions", href: "#case-competitions" },
-    ],
+    href: "/programs",
   },
-  { label: "Events", href: "#events" },
+  { label: "Events", href: "/events" },
   {
     label: "Resources",
     dropdown: [
