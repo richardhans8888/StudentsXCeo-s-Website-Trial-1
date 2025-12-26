@@ -1,8 +1,8 @@
 # StudentsXCEOs – Technology & Development
 
-This repository is officially maintained and governed by the **Technology & Development Division** of StudentsXCEOs.
+This repository is officially maintained by the **Technology & Development Division** of StudentsXCEOs.
 
-All system architecture, source code, technical documentation, and development workflows within this repository are owned and managed by the Technology & Development Division.
+All system architecture, source code, technical documentation, and development workflows within this repository are owned and managed by the Technology & Development Division of StudentsXCEOs Jakarta.
 
 ## Rights & Ownership
 © StudentsXCEOs. All rights reserved.  
