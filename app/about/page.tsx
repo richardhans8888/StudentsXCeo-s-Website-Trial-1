@@ -21,7 +21,7 @@ export default function AboutPage() {
         
         {/* Centered Title */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-widest text-white uppercase text-center px-4">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-widest text-white uppercase text-center px-4 animate-in fade-in zoom-in duration-1000 ease-out fill-mode-forwards opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             About Us
           </h1>
         </div>
@@ -31,9 +31,9 @@ export default function AboutPage() {
       {/* Inspired by Image 1 content: "FERRARI DNA" style label and centered paragraph */}
       <section className="py-20 sm:py-32 px-6 sm:px-12 max-w-7xl mx-auto text-center">
         <div className="flex items-center justify-center gap-4 mb-8">
-          <span className="text-red-600 font-bold text-xl sm:text-2xl">1</span>
-          <div className="h-[1px] w-12 bg-red-600" />
-          <span className="text-red-600 font-bold tracking-widest uppercase text-sm sm:text-base">SXC DNA</span>
+          <span className="text-blue-600 font-bold text-xl sm:text-2xl">1</span>
+          <div className="h-[1px] w-12 bg-blue-600" />
+          <span className="text-blue-600 font-bold tracking-widest uppercase text-sm sm:text-base">SXC DNA</span>
         </div>
         
         <p className="text-xl sm:text-3xl md:text-4xl leading-relaxed font-normal text-zinc-800 max-w-5xl mx-auto">
@@ -100,9 +100,9 @@ export default function AboutPage() {
         <div className="w-full md:w-1/2 bg-[#111] text-white p-12 sm:p-20 flex flex-col justify-center relative">
           {/* Top small label */}
           <div className="absolute top-12 left-12 sm:left-20 flex items-center gap-4">
-             <span className="text-red-600 font-bold text-lg">3</span>
-             <div className="h-[1px] w-12 bg-red-600" />
-             <span className="text-red-600 font-bold tracking-widest uppercase text-sm">HISTORY</span>
+             <span className="text-blue-600 font-bold text-lg">3</span>
+             <div className="h-[1px] w-12 bg-blue-600" />
+             <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">HISTORY</span>
           </div>
 
           <div className="max-w-xl">
@@ -113,10 +113,10 @@ export default function AboutPage() {
               Our story officially begins in 2010 when the first chapter was established, creating a bridge between students and CEOs. It marked the start of a journey to empower future leaders through direct mentorship and real-world exposure.
             </p>
             
-            <a href="#" className="inline-flex items-center gap-3 text-white font-bold tracking-wider hover:text-red-500 transition-colors group">
+            <a href="#" className="inline-flex items-center gap-3 text-white font-bold tracking-wider hover:text-blue-500 transition-colors group">
               DISCOVER MORE
-              <div className="w-8 h-8 rounded-full border border-white flex items-center justify-center group-hover:border-red-500 transition-colors">
-                <svg className="w-3 h-3 group-hover:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-8 h-8 rounded-full border border-white flex items-center justify-center group-hover:border-blue-500 transition-colors">
+                <svg className="w-3 h-3 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>

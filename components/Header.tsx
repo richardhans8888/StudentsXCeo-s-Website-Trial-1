@@ -26,23 +26,14 @@ const navItems: NavItem[] = [
   { label: "Events", href: "/events" },
   {
     label: "Resources",
-    dropdown: [
-      { label: "Blog / Insights", href: "#blog-insights" },
-      { label: "Leadership Toolkit", href: "#leadership-toolkit" },
-      { label: "Career Resources", href: "#career-resources" },
-      { label: "Gallery / Documentation", href: "#gallery" },
-    ],
+    href: "/resources",
   },
   {
     label: "Join Us",
-    dropdown: [
-      { label: "Become a Member", href: "#become-member" },
-      { label: "Volunteer Opportunities", href: "#volunteer" },
-      { label: "Open Recruitment", href: "#open-recruitment" },
-    ],
+    href: "/join-us",
   },
-  { label: "Partners", href: "#partners" },
-  { label: "Contact", href: "#contact" },
+  { label: "Partners", href: "/partners" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {

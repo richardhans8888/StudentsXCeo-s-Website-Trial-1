@@ -15,17 +15,17 @@ export default function IntroAnimation() {
     }
 
     setShouldRender(true);
-    
+
     // Start animation sequence
     const timers = [
-      setTimeout(() => setStage("x"), 100),
-      setTimeout(() => setStage("expand"), 1200),
-      setTimeout(() => setStage("fadeout"), 3200),
+      setTimeout(() => setStage("x"), 50),
+      setTimeout(() => setStage("expand"), 250),
+      setTimeout(() => setStage("fadeout"), 850),
       setTimeout(() => {
         setStage("hidden");
         setShouldRender(false);
         sessionStorage.setItem("sxc_intro_seen", "true");
-      }, 4000),
+      }, 1100),
     ];
 
     return () => timers.forEach(clearTimeout);
@@ -35,15 +35,15 @@ export default function IntroAnimation() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-1000 ${
+      className={`fixed inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-300 ${
         stage === "fadeout" ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
       <div className="relative flex items-center justify-center overflow-hidden">
         {/* Left Text: STUDENTS */}
         <div
-          className={`overflow-hidden transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-            stage === "expand" || stage === "fadeout" ? "w-[240px] opacity-100" : "w-0 opacity-0"
+          className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+            stage === "expand" || stage === "fadeout" ? "w-[350px] sm:w-[450px] opacity-100" : "w-0 opacity-0"
           }`}
         >
           <span className="block text-4xl sm:text-6xl font-bold tracking-[0.2em] text-black whitespace-nowrap text-right pr-4">
@@ -53,7 +53,7 @@ export default function IntroAnimation() {
 
         {/* Center X */}
         <div
-          className={`transform transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+          className={`transform transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
             stage === "init" ? "scale-0 opacity-0 rotate-[-45deg]" : "scale-100 opacity-100 rotate-0"
           }`}
         >
@@ -62,14 +62,14 @@ export default function IntroAnimation() {
           </span>
         </div>
 
-        {/* Right Text: CEOS */}
+        {/* Right Text: CEOs */}
         <div
-          className={`overflow-hidden transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-            stage === "expand" || stage === "fadeout" ? "w-[160px] opacity-100" : "w-0 opacity-0"
+          className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+            stage === "expand" || stage === "fadeout" ? "w-[200px] sm:w-[260px] opacity-100" : "w-0 opacity-0"
           }`}
         >
           <span className="block text-4xl sm:text-6xl font-bold tracking-[0.2em] text-black whitespace-nowrap pl-4">
-            CEOS
+            CEOs
           </span>
         </div>
       </div>
